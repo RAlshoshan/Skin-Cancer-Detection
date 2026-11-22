@@ -1,0 +1,18 @@
+{
+  "reference": "Released train_cnn_final.py, ResNet50 binary baseline",
+  "seed": 42,
+  "batch_size": 16,
+  "max_epochs": 20,
+  "early_stop_patience": 7,
+  "min_delta": 0.0001,
+  "base_lr": 0.0001,
+  "backbone_lr": 6e-06,
+  "head_lr": 6e-05,
+  "backbone_wd": 0.1,
+  "head_wd": 0.01,
+  "scheduler": "ReduceLROnPlateau(val_loss)",
+  "frozen_split_sha256": "fdb74d4f067796ad57fc0f5c892d1d9eae4f09349f516951e813e399fccc0b61",
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "note": "Training uses reference optimization & transforms. Epoch-0 untrained evaluation and the reference plots are not reproduced here. Test set is reserved for final evaluation only."
+}

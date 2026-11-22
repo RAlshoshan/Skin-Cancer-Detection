@@ -1,0 +1,10 @@
+FROZEN SPLIT REPORT
+===================
+seed: 42   ratios(train/val/test): [0.7, 0.15, 0.15]
+frozen file: C:\Users\renad\OneDrive\”ÿÕ «·„ﬂ »\Master\ML\Phase 2\skin-cancer-phase2\splits\padufes20_patient_split.csv
+leakage: PASS (train/val/test patient sets disjoint)
+total patients: 1373   total images: 2298
+
+  train  patients=961   images=1612  lesions=1209  cancer=759 non=853 (cancer_frac=0.4708)
+  val    patients=205   images=319   lesions=258  cancer=154 non=165 (cancer_frac=0.4828)
+  test   patients=207   images=367   lesions=287  cancer=176 non=191 (cancer_frac=0.4796)

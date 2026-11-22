@@ -1,0 +1,9 @@
+DATA-LOADING SMOKE TEST
+=======================
+RESULT: PASS   device: cpu
+
+  train n=1612  img=[16, 3, 224, 224] torch.float32 labels=[16, 1] values=[0.0, 1.0] shape_ok=True label_ok=True
+  val   n=319   img=[16, 3, 224, 224] torch.float32 labels=[16, 1] values=[0.0, 1.0] shape_ok=True label_ok=True
+  test  n=367   img=[16, 3, 224, 224] torch.float32 labels=[16, 1] values=[0.0, 1.0] shape_ok=True label_ok=True
+  forward_pass: out=[4, 1] expected=[4, 1] ok=True
+  image_level_leakage: PASS

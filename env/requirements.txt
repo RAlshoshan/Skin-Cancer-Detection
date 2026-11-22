@@ -1,0 +1,28 @@
+# Phase 2 dependencies for the ResNet50 baseline (Target A).
+#
+# IMPORTANT: on Google Colab, torch/torchvision come preinstalled and are
+# matched to the runtime's CUDA. Do NOT force-reinstall torch unless you have
+# a reason — it is slow and can break CUDA. Instead, RECORD the versions Colab
+# gives you (the notebook writes `pip freeze` to env/env_snapshot.txt).
+#
+# What actually matters for reproducing the split and metrics:
+#   - numpy/scikit-learn: split permutation + AUC/F1 computation
+#   - torchvision: the ResNet50_Weights.IMAGENET1K_V1 enum + its transforms
+#
+# The split uses numpy's LEGACY RandomState, whose permutation depends only on
+# array length + seed (not numpy version), so numpy pinning is belt-and-braces.
+
+# Pin these (lightweight, reproducibility-critical):
+numpy>=1.26,<3
+pandas>=2.0
+scikit-learn>=1.3
+pillow>=9.0
+tqdm>=4.65
+matplotlib>=3.7
+pyyaml>=6.0
+
+# Use Colab's preinstalled torch/torchvision. If running locally, install a
+# matched pair for your CUDA, e.g.:
+#   torch==2.3.1
+#   torchvision==0.18.1
+# (Any torchvision >=0.13 exposes the ResNet50_Weights enum the code requires.)

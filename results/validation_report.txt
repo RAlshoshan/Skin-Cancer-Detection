@@ -1,0 +1,17 @@
+PAD-UFES-20 VALIDATION REPORT
+================================
+RESULT: PASS
+
+STATS:
+  metadata_rows_raw: 2298
+  metadata_columns: ['patient_id', 'lesion_id', 'smoke', 'drink', 'background_father', 'background_mother', 'age', 'pesticide', 'gender', 'skin_cancer_history', 'cancer_history', 'has_piped_water', 'has_sewage_system', 'fitspatrick', 'region', 'diameter_1', 'diameter_2', 'diagnostic', 'itch', 'grew', 'hurt', 'changed', 'bleed', 'elevation', 'img_id', 'biopsed']
+  patients: 1373
+  images: 2298
+  lesions: 1641
+  classes: 6
+  image_match_patterns: {'id+ext': 0, 'id-as-is': 2298, 'MISSING': 0}
+  orphan_image_files: 0
+  class_counts: {'BCC': 845, 'ACK': 730, 'NEV': 244, 'SEK': 235, 'SCC': 192, 'MEL': 52}
+  cancer_images: 1089
+  non_cancer_images: 1209
+  cancer_fraction: 0.4739

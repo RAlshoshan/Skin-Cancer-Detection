@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "device": "cpu",
+  "batches": {
+    "train": {
+      "n_samples": 1612,
+      "img_batch_shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "img_dtype": "torch.float32",
+      "label_batch_shape": [
+        16,
+        1
+      ],
+      "label_values_seen": [
+        0.0,
+        1.0
+      ],
+      "shape_ok": true,
+      "label_ok": true
+    },
+    "val": {
+      "n_samples": 319,
+      "img_batch_shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "img_dtype": "torch.float32",
+      "label_batch_shape": [
+        16,
+        1
+      ],
+      "label_values_seen": [
+        0.0,
+        1.0
+      ],
+      "shape_ok": true,
+      "label_ok": true
+    },
+    "test": {
+      "n_samples": 367,
+      "img_batch_shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "img_dtype": "torch.float32",
+      "label_batch_shape": [
+        16,
+        1
+      ],
+      "label_values_seen": [
+        0.0,
+        1.0
+      ],
+      "shape_ok": true,
+      "label_ok": true
+    }
+  },
+  "forward_pass": {
+    "output_shape": [
+      4,
+      1
+    ],
+    "expected": [
+      4,
+      1
+    ],
+    "ok": true
+  },
+  "notes": [],
+  "image_level_leakage": "PASS"
+}
